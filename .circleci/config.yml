@@ -20,9 +20,9 @@ jobs:
       - run: echo world
   print_name:
     docker:
-      -image: circleci/node:13.8.0
+      - image: cimg/base:2020.01
     steps:
-      - checkout 
+      - checkout
       - run:
         name: "echo an env var that is part of our project"
         command: |
