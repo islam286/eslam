@@ -24,7 +24,7 @@ jobs:
     steps:
       - checkout 
       - run:
-        command: 
+        command: |
           echo $test_env_var
       
 workflows:
