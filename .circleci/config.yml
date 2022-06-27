@@ -18,6 +18,13 @@ jobs:
     steps:
       - checkout 
       - run: echo world
+  print_name:
+    docker:
+      -image: circleci/node:13.8.0
+    steps:
+      - checkout 
+      - run:
+        command: echo $test_env_var
       
 workflows:
   say-hello-world:
